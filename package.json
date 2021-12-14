@@ -6,8 +6,8 @@
   "homepage": "https://trevsm.github.io/react-typescript-starter",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "deploy": "gh-pages -d build",
+    "build": "react-scripts build && mv build docs",
+    "deploy": "gh-pages -d docs",
     "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
   },
