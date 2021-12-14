@@ -1,0 +1,45 @@
+@import "../../Styles/Colors.scss";
+/* Logo Border Radius */
+$br: 25px;
+
+header {
+  .content {
+    display: flex;
+    /*Logo*/
+    h1 {
+      font-family: "Staatliches", cursive;
+      background-color: $accent;
+      color: white;
+      padding: 5px 10px;
+      text-shadow: 2px 2px 1px darken($accent, 15%);
+      font-size: 35px;
+      border-radius: 5px $br $br $br;
+    }
+    nav {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      /* Links */
+      a {
+        position: relative;
+        display: inline;
+        padding: 5px 0;
+        margin-right: 20px;
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 0;
+          height: 2px;
+          background-color: $accent;
+          transition: width 0.2s ease;
+        }
+        &:hover:after,
+        &:active:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

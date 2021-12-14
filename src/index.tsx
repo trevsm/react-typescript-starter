@@ -1,11 +1,17 @@
 import React from "react"
 import { render } from "react-dom"
-import App from "./components/App"
+import { BrowserRouter } from "react-router-dom"
+import App from "./App/App"
+
+import "minireset.css"
+import "./index.scss"
 
 const Index = () => {
   return (
     <React.StrictMode>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </React.StrictMode>
   )
 }

@@ -1,0 +1,10 @@
+@import "../../Styles/Colors.scss";
+
+.heading {
+  padding-bottom: 50px;
+  h1 {
+    font-size: 35px;
+    font-weight: bold;
+    color: $accent;
+  }
+}
