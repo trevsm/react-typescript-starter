@@ -11,9 +11,12 @@ function App() {
       <Navigation />
       <div className="content">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path={process.env.HOMEPAGE + "/"} element={<Home />} />
+          <Route path={process.env.HOMEPAGE + "/about"} element={<About />} />
+          <Route
+            path={process.env.HOMEPAGE + "/contact"}
+            element={<Contact />}
+          />
         </Routes>
       </div>
       <Footer />
