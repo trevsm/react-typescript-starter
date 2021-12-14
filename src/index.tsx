@@ -9,7 +9,7 @@ import "./index.scss"
 const Index = () => {
   return (
     <React.StrictMode>
-      <BrowserRouter>
+      <BrowserRouter basename="/react-typescript-starter">
         <App />
       </BrowserRouter>
     </React.StrictMode>
