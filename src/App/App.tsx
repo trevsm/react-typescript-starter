@@ -11,10 +11,16 @@ function App() {
       <Navigation />
       <div className="content">
         <Routes>
-          <Route path={process.env.HOMEPAGE + "/"} element={<Home />} />
-          <Route path={process.env.HOMEPAGE + "/about"} element={<About />} />
           <Route
-            path={process.env.HOMEPAGE + "/contact"}
+            path={process.env.REACT_APP_HOMEPAGE + "/"}
+            element={<Home />}
+          />
+          <Route
+            path={process.env.REACT_APP_HOMEPAGE + "/about"}
+            element={<About />}
+          />
+          <Route
+            path={process.env.REACT_APP_HOMEPAGE + "/contact"}
             element={<Contact />}
           />
         </Routes>
