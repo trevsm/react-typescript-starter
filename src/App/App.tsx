@@ -11,18 +11,9 @@ function App() {
       <Navigation />
       <div className="content">
         <Routes>
-          <Route
-            path={process.env.REACT_APP_HOMEPAGE + "/"}
-            element={<Home />}
-          />
-          <Route
-            path={process.env.REACT_APP_HOMEPAGE + "/about"}
-            element={<About />}
-          />
-          <Route
-            path={process.env.REACT_APP_HOMEPAGE + "/contact"}
-            element={<Contact />}
-          />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
       <Footer />
